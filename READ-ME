@@ -14,3 +14,7 @@ will most likely not have an issue with tons of requests, so you can put a very 
 a website that does not attract a lot of traffic may deny the requests in such a short time span so you may want to set the
 interval to 30 seconds).
 
+Also, the urllib.request and urllib.parse libraries may not fully work on MacOS. If this occurs, you will have to go into the 
+directory of your Python 3.x folder and run the Install Certificates.command and Update Shell Profile.command scripts.
+
+Best of luck!
