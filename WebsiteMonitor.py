@@ -15,6 +15,7 @@ import webbrowser
 
 #Allows user to input whatever website they would like to monitor.
 yourWebsite = input("Please enter the website you would like to use: https://www.")
+timeInterval = int(input("How often do you want to check the website (in seconds)?: "))
 while True:
     #This url is the one that will be used for the entire program.
     url = ("https://" + yourWebsite)
@@ -27,7 +28,7 @@ while True:
     #print(urlinfo)
 
     #Waits 60 seconds before checking the website for any changes.
-    time.sleep(5)
+    time.sleep(timeInterval)
 
     #Once again, we save the url into a variable.
     test2 = urllib.request.urlopen(url)
